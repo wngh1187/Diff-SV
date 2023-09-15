@@ -25,6 +25,6 @@ The obtained experimental results demonstrate that Diff-SV achieves state-of-the
 * Pytorch 1.8.1
 * Torchaudio 0.8.1
 
-* ```
+```
 ./docker.build.sh
 ```
