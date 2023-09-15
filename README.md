@@ -8,11 +8,23 @@ Pytorch code for following paper:
 
 # Abstract
 <img align="middle" width="2000" src="https://github.com/wngh1187/Diff-SV/blob/main/fig1_6.png">
-Background noise is a well-known factor that deteriorates the accuracy and reliability of speaker verification (SV) systems by blurring speech intelligibility. 
-Various studies have used separate pretrained enhancement models as the front-end module of the SV system in noisy environments, and these methods effectively remove noises. 
-However, the denoising process of independent enhancement models not tailored to the SV task can also distort the speaker information included in utterances. 
-We argue that the enhancement network and speaker embedding extractor should be fully jointly trained for SV tasks under noisy conditions to alleviate this issue. 
-Therefore, we proposed a U-Net-based integrated framework that simultaneously optimizes speaker identification and feature enhancement losses. 
-Moreover, we analyzed the structural limitations of using U-Net directly for noise SV tasks and further proposed Extended U-Net to reduce these drawbacks. 
-We evaluated the models on the noise-synthesized VoxCeleb1 test set and VOiCES development set recorded in various noisy scenarios. 
-The experimental results demonstrate that the U-Net-based fully joint training framework is more effective than the baseline, and the extended U-Net exhibited state-of-the-art performance versus the recently proposed compensation systems.
+Background noise considerably reduces the accuracy and reliability of speaker verification (SV) systems. 
+These challenges can be addressed using a speech enhancement system as a front-end module. 
+Recently, diffusion probabilistic models (DPMs) have exhibited remarkable noise-compensation capabilities in the speech enhancement domain. 
+Building on this success, we propose Diff-SV, a noise-robust SV framework that leverages DPM. 
+Diff-SV unifies a DPM-based speech enhancement system with a speaker embedding extractor, and yields a discriminative and noise-tolerable speaker representation through a hierarchical structure. 
+The proposed model was evaluated under both in-domain and out-of-domain noisy conditions using the VoxCeleb1 test set, an external noise source, and the VOiCES corpus. 
+The obtained experimental results demonstrate that Diff-SV achieves state-of-the-art performance, outperforming recently proposed noise-robust SV systems. 
+
+# Prerequisites
+
+## Environment Setting
+* We used 'nvcr.io/nvidia/pytorch:21.04-py3' image of Nvidia GPU Cloud for conducting our experiments. 
+* We used three Titan RTX GPUs for training. 
+* Python 3.6.9
+* Pytorch 1.8.1
+* Torchaudio 0.8.1
+
+* ```
+./docker.build.sh
+```
