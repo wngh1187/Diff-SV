@@ -1,0 +1,4 @@
+torchinfo
+torch_audiomentations
+matplotlib==3.5
+einops
