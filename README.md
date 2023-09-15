@@ -20,11 +20,7 @@ The obtained experimental results demonstrate that Diff-SV achieves state-of-the
 
 ## Environment Setting
 * We used 'nvcr.io/nvidia/pytorch:21.04-py3' image of Nvidia GPU Cloud for conducting our experiments. 
-* We used three Titan RTX GPUs for training. 
-* Python 3.6.9
-* Pytorch 1.8.1
-* Torchaudio 0.8.1
-
+* Run shell file to make docker image
 ```
-./docker.build.sh
+./docker/build.sh
 ```
