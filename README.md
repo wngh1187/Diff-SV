@@ -26,4 +26,11 @@ The obtained experimental results demonstrate that Diff-SV achieves state-of-the
 ```
 
 * Run shell file to activate docker container
-** Note that you must modify the mapping path before running the shell file
+* Note that you must modify the mapping path before running the shell file
+```
+./docker/interactive.sh
+```
+
+## Datasets
+* We used VoxCeleb1 dataset for training and test. 
+* For noisy test, we used the MUSAN corpus, Nonspeech100, VOiCES.
