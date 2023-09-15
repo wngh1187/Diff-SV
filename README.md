@@ -7,7 +7,7 @@ Pytorch code for following paper:
 
 
 # Abstract
-<img align="middle" width="2000" src="https://github.com/wngh1187/Diff-SV/blob/main/fig1_6.png">
+<img align="middle" width="1800" src="https://github.com/wngh1187/Diff-SV/blob/main/fig1_6.png">
 Background noise considerably reduces the accuracy and reliability of speaker verification (SV) systems. 
 These challenges can be addressed using a speech enhancement system as a front-end module. 
 Recently, diffusion probabilistic models (DPMs) have exhibited remarkable noise-compensation capabilities in the speech enhancement domain. 
@@ -20,17 +20,31 @@ The obtained experimental results demonstrate that Diff-SV achieves state-of-the
 
 ## Environment Setting
 * We used 'nvcr.io/nvidia/pytorch:21.04-py3' image of Nvidia GPU Cloud for conducting our experiments. 
-* Run shell file to make docker image
+* Run 'build.sh' file to make docker image
 ```
 ./docker/build.sh
 ```
 
 * Run shell file to activate docker container
-* Note that you must modify the mapping path before running the shell file
+* Note that you must modify the mapping path before running the 'interactive.sh' file
+
 ```
 ./docker/interactive.sh
 ```
 
 ## Datasets
-* We used VoxCeleb1 dataset for training and test. 
-* For noisy test, we used the MUSAN corpus, Nonspeech100, VOiCES.
+* We used [VoxCeleb1](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox1.html) dataset for training and test. 
+* For noisy test, we used the [MUSAN](https://www.openslr.org/17/), [Nonspeech100](http://web.cse.ohio-state.edu/pnl/corpus/HuNonspeech/HuCorpus.html), and [VOiCES](https://iqtlabs.github.io/voices/downloads/) datasets.
+* Each downloaded dataset should be mapped to the 'data' folder in docker environment.
+
+# Train and test
+```
+python3 code/diff_sv/main.py 
+```
+
+
+# Citation
+Please cite this paper if you make use of the code. 
+```
+TBA
+```
