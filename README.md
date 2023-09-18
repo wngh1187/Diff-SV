@@ -2,7 +2,7 @@
 
 Pytorch code for following paper:
 
-* **Title** : Diff-SV: A Unified Hierarchical Framework for Noise-Robust Speaker Verification Using Score-Based Diffusion Probabilistic Models (submitted to ICASSP 2024)
+* **Title** : Diff-SV: A Unified Hierarchical Framework for Noise-Robust Speaker Verification Using Score-Based Diffusion Probabilistic Models (submitted to ICASSP 2024, available [here](https://arxiv.org/abs/2309.08320)) 
 * **Autor** : Ju-ho Kim, Jungwoo Heo, Hyun-seo Shin, Chan-yeong Lim and Ha-Jin Yu
 
 
