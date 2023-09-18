@@ -25,7 +25,7 @@ The obtained experimental results demonstrate that Diff-SV achieves state-of-the
 ./docker/build.sh
 ```
 
-* Run shell file to activate docker container
+* Run 'interactive.sh' file to activate docker container
 * Note that you must modify the mapping path before running the 'interactive.sh' file
 
 ```
