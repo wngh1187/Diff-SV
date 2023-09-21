@@ -46,5 +46,10 @@ python3 code/diff_sv/main.py
 # Citation
 Please cite this paper if you make use of the code. 
 ```
-TBA
+@article{kim2023diff,
+  title={Diff-SV: A Unified Hierarchical Framework for Noise-Robust Speaker Verification Using Score-Based Diffusion Probabilistic Models},
+  author={Kim, Ju-ho and Heo, Jungwoo and Shin, Hyun-seo and Lim, Chan-yeong and Yu, Ha-Jin},
+  journal={arXiv preprint arXiv:2309.08320},
+  year={2023}
+}
 ```
